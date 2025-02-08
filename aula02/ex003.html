@@ -16,10 +16,39 @@
     <h1>Olá, mundo!!!</h1>
     <p>Já me livrei da maldição.</p>
     <script>
+             /*
+            Forçando conversão par inteiro parserInt 
+            Forçando conversão par Real parserFloat
+            
+            var n1 = Number.parseFloat(window.prompt ('Digite o primeiro número: '))
+            var n2 = Number.parseFloat(window.prompt ('Digite o segundo número: '))
+            var soma = n1 + n2
+            
+            Usando Concatenação  +
+            
+            (number) + (number) para adição
+            (string) + (string) para concatenação
+            
+            Formatação de String usando concatençaõ 
+
+            window.alert('A soma dos valores '+ n1 + ' e ' + n2 + 'é igual:' + soma)
+             */
+            
+             /*Conversão com Number onde o propŕio javascript identifica inteiro ou real 
+             */
            var n1 = Number(window.prompt ('Digite o primeiro número:'))
            var n2 = Number(window.prompt ('Digite o segundo número: '))
            var s = n1 + n2
+           
+           /*
+            Formatação de String usando Template string (placerouder)
+            */
            window.alert(`A soma dos valores ${n1} e ${n2} é igual a ${s}`)
+          
+           /* Conversão Number para String
+          String(n)
+          n.toString()
+          */
     </script>
 </body>
 </html>
