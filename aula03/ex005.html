@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> com JavaScrip</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        //capturando elementos pelo nome da tag
+        var p1 = window.document.getElementsByTagName('p')[1]
+        
+        //capturando elemento completo do html (body)
+        var corpo = window.document.body
+        
+        /*caputrando elementos pelo id
+        var d = window.document.getElementById('msg')
+        d.style.background ='green'
+        d.innerText = 'Estou aguardando...'
+        */
+
+        /*
+        comando completo sem capturar em var
+        window.document.getElementById('msg').innerHTML = 'Olá'
+        */
+        
+        //selecionando por queryselector
+        var d = window.document.querySelector('div#msg')
+        d.style.color ='blue'
+        d.style.background ='green'
+    </script>
+</body>
+</html>
