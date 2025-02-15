@@ -42,6 +42,19 @@
             var n2 = Number(tn2.value)
             var soma = n1 + n2
             res.innerHTML = `A soma entre ${n1} e ${n2} é <strong>${soma}</strong>`
+
+            /*
+            Refatorado usando const
+
+            function somar() {
+            const n1 = Number(document.getElementById('txtn1').value);
+            const n2 = Number(document.getElementById('txtn2').value);
+            const soma = n1 + n2;
+
+            const res = document.getElementById('res');
+            res.innerHTML = `A soma entre ${n1} e ${n2} é <strong>${soma}</strong>`;
+        }
+            */
         }
     </script>
 </body>
