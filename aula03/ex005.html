@@ -19,8 +19,10 @@
     <p>Aprendendo a usar o <strong>DOM</strong> com JavaScrip</p>
     <div id="msg">Clique em mim</div>
     <script>
+         
         //capturando elementos pelo nome da tag
-        var p1 = window.document.getElementsByTagName('p')[1]
+        var p1 = window.document.getElementsByTagName('p')[0]
+        p1.style.color ='blue'
         
         //capturando elemento completo do html (body)
         var corpo = window.document.body
@@ -40,6 +42,7 @@
         var d = window.document.querySelector('div#msg')
         d.style.color ='blue'
         d.style.background ='green'
+        document.write(d.innerHTML)
     </script>
 </body>
 </html>
