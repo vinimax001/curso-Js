@@ -42,4 +42,4 @@ switch(diasemana){
     default:
         console.log ('[Erro] Dia Inválido')
         break
-}gi 
+}
