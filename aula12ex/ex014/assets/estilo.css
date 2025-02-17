@@ -1,53 +1,80 @@
 @charset "UTF-8";
 
-*{
+* {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box; /* Garante que padding e border não aumentem a largura */
 }
 
-body{
+body {
+    display: flex; /* Habilita o Flexbox no body */
     flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe a altura total da tela */
     background-color: rgb(70, 142, 236);
     font: normal 15pt Arial;
 }
 
-header{
+header {
     color: white;
     text-align: center;
     margin-top: 20px;
 }
 
-section{
+section {
     display: flex;
-    flex-flow: column;
+    flex-flow: column nowrap;
     align-items: center;
-    margin: auto;
-    margin-top: 15px;
+    margin: 15px auto; /* Combina margin-top e margin: auto */
     background-color: white;
     border-radius: 10px;
     padding: 20px;
-    width: 500px;
+    /* Largura responsiva: */
+    width: 90%; /* Ocupa 90% da largura do contêiner pai */
+    max-width: 500px; /* Largura máxima de 500px */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.347);
+    flex: 1; /* Permite que a seção cresça para preencher o espaço */
 }
 
-div#msg{
-    padding:10px;
+div#msg {
+    padding: 10px;
 }
 
-div#foto{
+div#foto {
     padding: 20px;
-
-    
+    /* Centraliza a imagem horizontalmente */
+    display: flex;
+    justify-content: center;
 }
 
-footer{
+div#foto img { /* Estiliza a imagem dentro da div#foto */
+    max-width: 100%; /* Impede que a imagem ultrapasse a largura da div */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+footer {
     background-color: black;
-    width: 100vw;
+    width: 100%; /* Largura total */
     padding: 20px;
     color: white;
     text-align: center;
     font-style: italic;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    /* Footer fixo com tratamento para conteúdo curto: */
+    margin: auto; /* Empurra o footer para o final */
+}
+
+/* Media Queries para telas menores (ex: celulares) */
+@media (max-width: 400px) {
+    section {
+        width: 95%; /* Largura maior em telas menores */
+        padding: 10px; /* Padding menor */
+    }
+
+    div#msg {
+        font-size: 14pt; /* Fonte menor */
+    }
+
+    footer {
+        font-size: 12pt; /* Fonte menor no footer */
+        padding: 10px; /* Padding menor no footer */
+    }
 }
