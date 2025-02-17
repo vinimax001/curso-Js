@@ -30,14 +30,8 @@ section{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.347);
 }
 
-div#msg{
-    padding:10px;
-}
-
-div#foto{
-    padding: 20px;
-
-    
+div{
+    padding:20px;
 }
 
 footer{
