@@ -34,18 +34,26 @@ div{
     padding:20px;
 }
 
-#res {
+div#res {
     display: flex;
     flex-direction: column; /* Para alinhar a imagem e o texto verticalmente */
     align-items: center; /* Para centralizar horizontalmente */
     justify-content: center; /* Para centralizar verticalmente */
-  }
+}
+
+input#botao{
+    padding: 10px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
   
-  #foto {
+#foto {
     /* Estilos adicionais para a imagem, se necessário */
+    padding-top: 20px;
     max-width: 100%; /* Para evitar que a imagem seja maior que o contêiner */
     height: auto; /* Para manter a proporção da imagem */
-  }
+}
 
 footer{
     background-color: black;
