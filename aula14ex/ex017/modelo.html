@@ -13,16 +13,18 @@
     <section>
         <div>
             <label for="operador">Número</label>
-            <input type="number" name="operador" id="operador">
-            <input type="button" value="Gerar Tabuada" onclick="calcular()">
+            <input type="number" name="operador" id="txtn">
+            <input type="button" id="botao" value="Gerar Tabuada" onclick="tabuada()">
         </div>
-        <div id="res">
-
+        <div>
+            <select name="tabuada" id="seltab" size="10">
+                <option>Digite um número acima</option>
+            </select>
         </div>
     </section>
     <footer>
         <p>
-            &copy;Feito por <strong>Vinicius Aguiar</strong>
+            &copy;Feito por <strong><a href="https://github.com/vinimax001" target="_blank">Vinicius Aguiar</a></strong>
         </p>
     </footer>
     <script src="assets/script.js"></script>
