@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Contador</h1>
+    </header>
+    <section>
+        <div id="dados">
+            <p>
+                <label for="inicio">Início</label>:
+                <input type="number" name="inicio" id="txti">
+            </p>
+            <p>
+                <label for="fim">Fim:</label>
+                <input type="number" name="fim" id="txtf">             
+            </p>
+            <p>
+                <label for="passo">Passo:</label>
+                <input type="number" name="passo" id="txtp">
+            </p>
+            <p>
+                <input type="button" value="contar " id="botao" onclick="contar()">
+            </p>
+        </div>
+        <div id="resultado">
+            <p>Preparando a contagem...</p>
+        </div>
+    </section>
+    <footer>
+        <p>
+            &copy;Feito por <strong><a href="https://github.com/vinimax001" target="_blank">Vinicius Aguiar</a></strong>
+        </p>
+    </footer>
+    <script src="assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    flex-direction: column;
+    background-color: rgb(70, 142, 236);
+    font: normal 15pt Arial;
+}
+
+header{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+section{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.347);
+}
+
+div{
+    padding:20px;
+}
+
+footer{
+    background-color: black;
+    width: 100vw;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
